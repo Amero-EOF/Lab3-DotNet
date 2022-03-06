@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Green Bottles - Lab3";
+}
+<body>
+
+    <form method="post" action="/Home/Count">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        Enter the number of bottles between 50 and 100:
+                        <input type="number" min="50" max="100" name="Bottles">
+                    </td>
+                    <td>
+                        <button type="submit" name="Count" value="Count">Count!</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+</body>

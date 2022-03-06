@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my website!</h1>
+        <p>My name is: Amero Defranco</p>
+        <br>
+        <br>
+        <a href="/">Home</a>&nbsp
+        <a href="/Home/Razor">Show the song!</a>&nbsp
+        <a href="/Home/CreatePerson">Persons</a>
+
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        
+        To add the css file, I had to create the /wwwroot static folder and put the StyleSheet there because style sheets are static files<br><br>
+        To add the _Layout I created a new folder ~/Views/Shared. The reason why I put _Layout in the shared folder is because _Layout is shared<br>
+        by all of the views in ~/Views/Home/. I also needed to add the _Layout view to the _ViewStart so that whenever a view is about to be displayed it will be given the layout.
+    </footer>
+</body>
+</html>

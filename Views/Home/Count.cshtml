@@ -1,0 +1,50 @@
+﻿@using Microsoft.AspNetCore.Http;
+@{
+    ViewData["Title"] = "Count - Lab3";
+}
+
+
+
+
+<body>
+    <form method="post" action="/Home/Razor">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <button value="submit">Play Again!</button>
+                    </td>
+                </tr>
+
+                @for (int i = (int)ViewData["count"]; i > 0; i--)
+                {
+                    <tr>
+                        <td>
+                            <p>
+                                @i green bottles standing on the wall,<br>
+                                @i green bottles standing on the wall,<br>
+                                And if one green bottle should accidentally fall,<br>
+
+                                @if (i == 1)
+                                {
+                                    <text>There'll be no green bottles standing on the wall</text>
+                                }
+                                else
+                                {
+                                    <text>There'll be @(i-1) green bottles standing on the wall.</text>
+
+                                }
+                            </p>
+                        </td>
+                    </tr>
+                }
+                <tr>
+                    <td>
+                        <p>There are no green bottles standing on the wall.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+</body>

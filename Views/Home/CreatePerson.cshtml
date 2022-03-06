@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "CreatePerson - Lab3";
+}
+
+<body>
+    <form method="post" action="DisplayPerson">
+        <table>
+            <tbody>
+                <tr>
+                    <td style="text-align:right">First Name:</td>
+                    <td><input type="text" name="firstName"></td>
+                </tr>
+                <tr>
+                    <td style="text-align:right">Last Name:</td>
+                    <td><input type="text" name="lastName"></td>
+                </tr>
+                <tr>
+                    <td style="text-align:right">Age:</td>
+                    <td><input type="number" min="0" name="age"></td>
+                </tr>
+                <tr>
+                    <td style="text-align:right">Email Address:</td>
+                    <td><input type="email" name="emailAddr"></td>
+                </tr>
+                <tr>
+                    <td style="text-align:right">Date of Birth:</td>
+                    <td><input type="date" style="width:100%" name="dateOfBirth"></td>
+                </tr>
+                <tr>
+                    <td style="text-align:right">Password:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td style="text-align:right">Description:</td>
+                    <td><input type="text" name="description"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button value="submit" style="width:100%">Create</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
